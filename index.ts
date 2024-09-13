@@ -19,11 +19,10 @@ interface NumberArray {
     [index: number]: number;
 }
 
-export = Polyfit;
-class Polyfit {
-    private x: NumberArray;
-    private y: NumberArray;
-    private FloatXArray: Float32ArrayConstructor|Float64ArrayConstructor;
+export class Polyfit {
+    private x?: NumberArray;
+    private y?: NumberArray;
+    private FloatXArray?: Float32ArrayConstructor|Float64ArrayConstructor;
 
     /**
      * Polyfit
